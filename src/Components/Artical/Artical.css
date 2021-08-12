@@ -1,0 +1,20 @@
+.author-1{
+    font-weight: bolder;
+}
+.title-news-1{
+    font-size: 3rem;
+}
+.title-image{
+    max-height:100vh;
+}
+@media only screen and (max-width: 800px){
+    .title-image{
+        display:block;
+        width:100%; 
+        height:100%;
+        object-fit: cover;
+    }
+    .title-news-1{
+        font-size: 2rem;
+    }
+}
