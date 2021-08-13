@@ -14,12 +14,11 @@ export default function Main() {
     }, [])
 
     const fetchItems = () => {
-        axios.get("https://newsdata.io/api/1/news?apikey=pub_826b29c6f69c0b9e4225b860b3621c54d47&q=disaster")
+        axios.get("/api/1/news?apikey=pub_826b29c6f69c0b9e4225b860b3621c54d47&q=disaster")
             .then(function (response) {
                 setData(response.data.results);
             })
     }
-    console.log(data);
 
     return (
         <>

@@ -9,7 +9,6 @@ export default function Artical(props) {
       }, [])
       
     const {state} = props.location;
-    console.log(state.content)
     return (
         <>
             <Row justify="center">
