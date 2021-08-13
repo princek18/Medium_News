@@ -1,10 +1,11 @@
 import React from 'react'
 import { Col, Row } from 'antd'
 import { Link } from 'react-router-dom'
+import './MainDisplay.css'
 
 export default function MainDisplay({ item }) {
     return (
-        <Link to={{pathname:"/artical", state:item}} style={{color:"black"}}>
+        <Link to={{pathname:`/${item.pubDate}`, state:item}} style={{color:"black"}}>
         <Row className="news" justify="center">
             <Col span={18}>
                 <p className="author">{item.creator==null?"Anonymous":item.creator}</p>

@@ -23,7 +23,7 @@ function App() {
         <Route path="/signin" component={SignIn}/>
         <Route path="/story" component={Story}/>
         <Route path="/write" component={Write}/>
-        <Route path="/artical" component={Artical}/>
+        <Route path="/:id" component={Artical}/>
       </Switch>
       <Footer/>
     </div>

@@ -1,8 +1,13 @@
 import { Row, Col } from 'antd'
 import React from 'react'
 import './Artical.css'
+import { useEffect } from 'react'
 
 export default function Artical(props) {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+      
     const {state} = props.location;
     console.log(state.content)
     return (
