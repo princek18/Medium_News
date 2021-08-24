@@ -14,7 +14,7 @@ export default function Main() {
     }, [])
 
     const fetchItems = () => {
-        axios.get("https://newsdata.io/api/1/news?apikey=pub_826b29c6f69c0b9e4225b860b3621c54d47&q=disaster")
+        axios.get("https://newsdata.io/api/1/news?apikey=pub_943b93f6f0dcbde3f3cc3a7817058fa108e&q=disaster")
             .then(function (response) {
                 setData(response.data.results);
             })
